@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somos Natureza</title>
-    <link rel="icon" href="/img/logo.png">
+    <link rel="icon" href="/img/Logos/logo.png">
+    <link rel="stylesheet" href="/Entrega II/CSS/style.css">
 </head>
 <body>
     <header>
-        <img src="/img/logo_header.png" alt="Logo da Somos Natureza - Somo ilha Grande" width="100rem">
-        <h1>Somos Natureza - Somos Ilha Grande</h1>
-        <div class="botoes">
+        <img src="/img/Logos/logo_header.png" alt="Logo da Somos Natureza - Somo ilha Grande" width="100rem">
+        <h1>Somos Natureza</h1>
+        <div class="barra-acessibilidade" role="region" aria-label="Barra de acessibilidade">
+            <button id="aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+            <button id="diminuir-fonte" aria-label="Diminuir tamanho do texto">A-</button>
+            <button id="resetar-fonte" aria-label="Restaurar tamanho padrão">A=</button>
+            <button id="contraste" aria-label="Ativar ou desativar alto contraste">Alto Contraste</button>
+</div>
+
+        <nav>
             <ul>
                 <li><a href="../HTML/index.html">Início</a></li>
                 <li><a href="../HTML/sobre.html">Sobre Nós</a></li>
@@ -18,7 +26,7 @@
                 <li><a href="../HTML/voluntario.html">Seja Voluntário</a></li>
                 <li><a href="../HTML/doar.html">Doe Agora</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <main>
         <h2>Cuidamos da Ilha. Cuidamos da Vida</h2>
@@ -29,25 +37,25 @@
 
         <div class="cards-container">
             <div class="card">
-                <img src="/img/planta.png" alt="Imagem de uma planta" width="60rem">
+                <img src="/img/Adicionais/planta.png" alt="Imagem de uma planta" width="60rem">
                 <h3>Restauração</h3>
                 <p>+10 mil m² de áreas restauradas.</p>
             </div>
 
             <div class="card">
-                <img src="/img/reciclagem.png" alt="Imagem do símbolo de reciclagem" width="60rem">
+                <img src="/img/Adicionais/reciclagem.png" alt="Imagem do símbolo de reciclagem" width="60rem">
                 <h3>Reciclagem</h3>
                 <p>Toneladas de resíduos reciclados.</p>
             </div>
 
             <div class="card">
-                <img src="/img/educação.png" alt="Imagem de dois livros" width="60rem">
+                <img src="/img/Adicionais/educação.png" alt="Imagem de dois livros" width="60rem">
                 <h3>Educação</h3>
                 <p>Educação ambiental com escolas e voluntários.</p>
             </div>
             
             <div class="card">
-                <img src="/img/mão dadas.png" alt="Imagem de duas mãos dadas" width="60rem">
+                <img src="/img/Adicionais/mão dadas.png" alt="Imagem de duas mãos dadas" width="60rem">
                 <h3>Voluntários</h3>
                 <p>Rede ativa de Voluntários locais e nacionais.</p>
             </div>
@@ -63,10 +71,16 @@
         </div>
 
         <h2>Fale conosco!</h2>
-        <h3>Telefone</h3>
-        <a href="tel:+5511978975558">+55 (11) 97897-5558</a>
-        <h3>Email</h3>
-        <a href="mailto:contato@somosnatureza.org">contato@somosnatureza.org</a>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Telefone</h3>
+                <a href="tel:+5511978975558">+55 (11) 97897-5558</a>
+            </div>
+            <div class="card">
+                <h3>Email</h3>
+                <a href="mailto:contato@somosnatureza.org">contato@somosnatureza.org</a>
+            </div>
+        </div>
     </main>
 
     <footer>
