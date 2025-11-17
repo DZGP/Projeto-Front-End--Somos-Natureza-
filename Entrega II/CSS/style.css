@@ -60,7 +60,7 @@ nav a:hover {
     align-items: center;
 }
 
-.contraste {
+.contraste, .contraste *{
     background: black !important;
     color: yellow !important;
 }

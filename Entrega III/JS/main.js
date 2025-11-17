@@ -19,6 +19,21 @@ menulinks.forEach(link => {
 const savedPage = localStorage.getItem("currentPage") || "inicio";
 openPage(savedPage);
 
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+link.addEventListener('click', function (e) {
+    const id = this.getAttribute('href').substring(1);
+    if (!id) return;
+    e.preventDefault();
+    document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
+    const target = document.getElementById(id);
+    if (target) {
+    target.style.display = 'block';
+    target.focus();
+    }
+});
+});
+
+
 //ACESSIBILIDADE
 //AUMENTAR FONTE
 
